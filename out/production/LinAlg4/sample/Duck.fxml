@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <!--        
 Copyright 2006 Sony Computer Entertainment Inc..
@@ -8,23 +8,27 @@ Contributor: InteractiveMesh e.K., http://www.interactivemesh.org/impressum.html
 See attached LICENSE-Duck.txt
 -->
 
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.PhongMaterial?>
 <?import javafx.scene.shape.MeshView?>
 <?import javafx.scene.shape.TriangleMesh?>
 
-<MeshView id="DuckFXML">
+<MeshView id="DuckFXML" fx:id="duck" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
   <material>
     <PhongMaterial specularPower="15.7955">
       <diffuseColor>
-        <Color red="1.0" green="1.0" blue="1.0" opacity="1.0"/>
+        <Color blue="1.0" green="1.0" opacity="1.0" red="1.0" />
       </diffuseColor>
       <specularColor>
-        <Color red="0.12157" green="0.12157" blue="0.12157"/>
+        <Color blue="0.12157" green="0.12157" red="0.12157" />
       </specularColor>
       <diffuseMap>
-        <Image url="@duckCM.png"/>
+        <Image url="@duckCM.png" />
       </diffuseMap>
     </PhongMaterial>
   </material>
